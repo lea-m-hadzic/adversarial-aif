@@ -1,224 +1,117 @@
 # Optimizing Active Inference Agents for Robustness to Adversarial Behavior in Traffic Interactions
 
-**Lea M. Hadzic**  
-Stanford University  
-Department of Computer Science
+> When a self-driving car sees another driver flip on their yield indicator while accelerating into the intersection, who should it trust — the signal, or the motion?
+
+This project formulates that question as an optimization problem. A naive active-inference agent that trusts yield signals collides in **100% of deterministic adversarial encounters**. Adding a single-parameter inconsistency detector eliminates the failure mode and matches a ground-truth oracle in collision prevention.
+
+![Detection vs. naive agent](episode_comparison.gif)
+
+*Left: a naive agent trusts A's yield signal and collides. Right: the same scenario with an inconsistency detector — B identifies the deception, brakes, and yields safely. Both panels use identical initial conditions and the same adversary.*
 
 ---
 
-## Overview
+## What's here
 
-This project studies how active inference agents behave when explicit communication in traffic interactions becomes unreliable. Specifically, we investigate adversarial agents that signal an intent to yield while behaving inconsistently with that signal.
+A complete study of detection-threshold selection in a simulated two-agent intersection, framed three ways:
 
-We formulate the selection of an inconsistency-detection threshold as an optimization problem under three formulations:
+- **F1 — Scalarized:** weighted-sum loss over latency, false alarms, and missed detections, solved by golden-section search
+- **F2 — Constrained:** minimize latency subject to a false alarm bound, solved by both quadratic penalty and log-barrier outer-loop methods
+- **F3 — Multi-objective:** 50-point Pareto sweep over (latency, false-alarm rate, collision rate)
 
-- Scalarized weighted-sum optimization
-- Constrained optimization
-- Multi-objective Pareto optimization
+Across all three, the optimal threshold varies by **20× across loss weights** and **25× across adversarial-prior assumptions**, meaning trust calibration isn't a tunable hyperparameter — it's a design decision tied to the deployment environment.
 
-The system is evaluated in a simulated two-agent uncontrolled intersection environment with randomized adversarial behavior and observation noise.
+## Key results
 
-![Detection vs naive comparison](episode_comparison.gif)
+**Detection prevents 100% of preventable collisions.** At observation noise σ = 2.0 m/s², a naive agent collides on 4.0% of episodes, the optimized detector collides on 1.5%, and a ground-truth oracle collides on 1.5%. The residual 1.5% reflects scenarios where even perfect knowledge can't brake in time.
 
----
+**Five of six optimization-method optima land on the empirical Pareto frontier**, validating that the formulations are well-posed:
 
-## Key Contributions
+![Pareto frontier with F1 and F2 optima overlaid](results/pareto_analysis/pareto_frontier.png)
 
-- Developed a simulated adversarial traffic-interaction environment for active inference agents
-- Designed an inconsistency detector based on signal–kinematic disagreement
-- Formulated threshold selection as:
-  - weighted-sum optimization
-  - constrained optimization
-  - Pareto optimization
-- Compared:
-  - golden-section search
-  - quadratic-penalty methods
-  - log-barrier methods
-- Performed sensitivity analyses over:
-  - observation noise
-  - adversarial priors
-  - oracle performance bounds
+**Constrained formulation beats weighted-sum proxies.** At a fixed false-alarm bound of 5%, the F2 penalty method achieves 0.245 s latency versus F1's nearest weighted-sum analog at 0.316 s — empirical evidence for using explicit constraints when a hard operational bound exists.
 
----
+**Penalty and barrier methods bracket the constraint boundary** as theory predicts: penalty converges to FA = 5.00% (exactly at the bound), barrier converges to FA = 4.50% (strictly feasible).
+
+**Results are robust.** Across 10 random seeds, the optimal τ varies by less than 0.001 for every method tested. Numbers reported here are not Monte Carlo artifacts.
 
 ## Paper
 
-See the full report here:
+Full writeup with system model, optimization formulations, sensitivity analyses, and ablations:
 
-```text
-CS361_Final_Project.pdf
+📄 **[Final paper (PDF)](paper/CS361_Final_Project.pdf)** — IEEE 2-column, 5 pages
+
+## Tech stack
+
+- Python 3.11+
+- NumPy, matplotlib, seaborn for analysis and figures
+- Pillow for the animation GIF
+- No deep learning, no large dependencies — everything runs on CPU in under a minute per experiment
+
+## Repository layout
+
+```
+.
+├── src/                   # Core simulation
+│   ├── agent.py           # Two-agent intersection state
+│   ├── simulator.py       # Episode runner
+│   ├── beliefs.py         # Bayesian update over yield/non-yield types
+│   ├── objective.py       # Simplified EFE action selection
+│   ├── adversarial.py     # Honest yielder, non-yielder, deceptive policies
+│   ├── detection.py       # Inconsistency detector
+│   └── evaluation.py      # Aggregate metrics over an ensemble of episodes
+├── experiments/
+│   ├── optimize_threshold.py        # F1: golden-section search
+│   ├── constrained_optimization.py  # F2: penalty + barrier methods
+│   ├── pareto_analysis.py           # F3: Pareto frontier sweep
+│   ├── sensitivity_sweep.py         # Noise, adversarial rate, oracle baseline
+│   └── extended_experiments.py      # Seed variance + conflict-gating ablation
+├── analysis/
+│   ├── plot_pareto.py
+│   ├── plot_convergence.py
+│   ├── plot_sensitivity.py
+│   └── animate_episodes.py
+├── configs/default.yaml
+├── tests/
+└── paper/                 # LaTeX source + final PDF
 ```
 
----
-
-## Repository Structure
-
-```text
-project/
-├── figures/
-├── src/
-├── results/
-├── notebooks/
-├── README.md
-├── requirements.txt
-└── CS361_Final_Project.pdf
-```
-
----
-
-## Methodology
-
-### Environment
-
-We simulate a two-agent uncontrolled intersection where each agent:
-- approaches perpendicularly
-- emits explicit yielding signals
-- reasons about the intent of the other agent
-
-An adversarial agent falsely signals yielding while maintaining velocity.
-
----
-
-### Active Inference Agent
-
-The protagonist agent maintains a belief over whether the opposing agent will yield using Bayesian inference over:
-- observed acceleration
-- explicit signaling behavior
-
-Action selection minimizes a simplified expected free energy objective balancing:
-- collision probability
-- crossing efficiency
-
----
-
-### Inconsistency Detection
-
-We define a running inconsistency score based on disagreement between:
-- communicated intent
-- observed kinematics
-
-Detection triggers when the score exceeds threshold `τ`.
-
----
-
-## Optimization Formulations
-
-### F1 — Scalarized Optimization
-
-Minimize:
-
-```math
-L(\tau) = w_l \ell(\tau) + w_f FA(\tau) + w_m (1 - \rho(\tau))
-```
-
-using golden-section search.
-
----
-
-### F2 — Constrained Optimization
-
-Minimize detection latency subject to a false alarm bound:
-
-```math
-\min_{\tau} \ell(\tau)
-\quad \text{s.t.} \quad FA(\tau) \leq FA_{max}
-```
-
-Solved using:
-- quadratic penalty methods
-- logarithmic barrier methods
-
----
-
-### F3 — Multi-Objective Optimization
-
-Constructed an empirical Pareto frontier over:
-- detection latency
-- false alarm rate
-- collision rate
-
----
-
-## Main Results
-
-| Method | Latency (s) | False Alarm (%) | Recall (%) |
-|---|---|---|---|
-| F1: miss-heavy | 0.086 | 16.5 | 85 |
-| F1: balanced | 0.216 | 8.0 | 81 |
-| F2: penalty | 0.245 | 5.0 | 79 |
-| F2: barrier | 0.293 | 4.5 | 78 |
-
-Key findings:
-- Optimal thresholds varied dramatically across assumptions
-- Explicit constrained optimization outperformed weighted-sum proxies under hard false-alarm requirements
-- Detection-enhanced agents matched oracle collision-prevention performance at the studied noise level
-
----
-
-## Sensitivity Analyses
-
-We evaluated robustness under varying:
-- observation noise
-- adversarial priors
-- random seeds
-
-Findings showed:
-- threshold optimization only becomes meaningful beyond a certain observation-noise regime
-- optimal thresholds shift significantly depending on adversarial prevalence
-
----
-
-## Running the Project
-
-### Setup
+## Running it
 
 ```bash
-conda create -n cs361 python=3.10
-conda activate cs361
+# Install dependencies
+pip install numpy matplotlib seaborn pillow pyyaml
 
-pip install -r requirements.txt
+# Run individual experiments
+python -m experiments.optimize_threshold        # F1
+python -m experiments.constrained_optimization  # F2
+python -m experiments.pareto_analysis           # F3
+python -m experiments.sensitivity_sweep         # Sensitivity + oracle baseline
+python -m experiments.extended_experiments      # Seed variance + ablations
+
+# Generate figures
+python -m analysis.plot_pareto
+python -m analysis.plot_convergence
+python -m analysis.plot_sensitivity
+python -m analysis.animate_episodes             # Generates the GIF
 ```
 
----
+Each experiment writes results to `results/<experiment_name>/result.json`. Plotting scripts read those JSON files and write `.png`/`.pdf` figures next to them.
 
-### Run Simulation
+## Background
 
-```bash
-python run_simulation.py
-```
+This project builds on recent active-inference models of road-user interaction by Schumann et al. (2026), which show that misleading communication can produce unsafe outcomes — and treat that observation as a limitation. The contribution here is to make that failure mode the explicit subject of optimization, with three formulations, three measurable metrics, and a Pareto-validated cross-comparison.
 
----
+References for the techniques used:
+- Kochenderfer & Wheeler, *Algorithms for Optimization* (MIT Press, 2019) — golden-section, penalty/barrier, Pareto
+- Nocedal & Wright, *Numerical Optimization* (Springer, 2006) — penalty methods
+- Boyd & Vandenberghe, *Convex Optimization* (Cambridge, 2004) — barrier methods
+- Friston, "The free-energy principle" *Nat Rev Neurosci* (2010) — active inference foundations
 
-### Run Optimization
+## License
 
-```bash
-python optimize_threshold.py
-```
+[MIT](LICENSE)
 
----
+## Author
 
-### Generate Figures
-
-```bash
-python make_plots.py
-```
-
----
-
-## Future Work
-
-Potential extensions include:
-- continuous action spaces
-- richer adversarial policies
-- learned inconsistency detectors
-- multi-agent signaling dynamics
-- full expected free energy formulations with information-gathering behavior
-
----
-
-## References
-
-- Friston, K. *The Free-Energy Principle*
-- Kochenderfer & Wheeler. *Algorithms for Optimization*
-- Boyd & Vandenberghe. *Convex Optimization*
-- Schumann et al. *Active Inference for Road User Interactions*
+**Lea M. Hadzic** — Stanford Computer Science
+Final project for CS 361 / AA 222 (Engineering Design Optimization), Spring 2026.
