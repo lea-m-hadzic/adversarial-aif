@@ -1,6 +1,8 @@
 # Optimizing Active Inference Agents for Robustness to Adversarial Behavior in Traffic Interactions
 
-Final project for CS361 exploring optimization methods for robust active inference in adversarial autonomous-driving interactions.
+**Lea M. Hadzic**  
+Stanford University  
+Department of Computer Science
 
 ---
 
@@ -220,11 +222,3 @@ Potential extensions include:
 - Kochenderfer & Wheeler. *Algorithms for Optimization*
 - Boyd & Vandenberghe. *Convex Optimization*
 - Schumann et al. *Active Inference for Road User Interactions*
-
----
-
-## Author
-
-**Lea M. Hadzic**  
-Stanford University  
-Department of Computer Science
