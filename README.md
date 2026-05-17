@@ -26,7 +26,7 @@ Across all three, the optimal threshold varies by **20× across loss weights** a
 
 **Five of six optimization-method optima land on the empirical Pareto frontier**, validating that the formulations are well-posed:
 
-![Pareto frontier with F1 and F2 optima overlaid](pareto_frontier.pdf)
+![Pareto frontier with F1 and F2 optima overlaid](pareto_frontier.png)
 
 **Constrained formulation beats weighted-sum proxies.** At a fixed false-alarm bound of 5%, the F2 penalty method achieves 0.245 s latency versus F1's nearest weighted-sum analog at 0.316 s — empirical evidence for using explicit constraints when a hard operational bound exists.
 
