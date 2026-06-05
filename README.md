@@ -16,13 +16,20 @@ This project formulates that question as an optimization problem. A naive active
 
 ## What's here
 
-A complete study of detection-threshold selection in a simulated two-agent intersection, framed three ways:
+A two-agent uncontrolled-intersection simulator, an EFE-style decision-making
+policy with a Bayesian belief over the other agent's intent, and a detector
+that watches for inconsistencies between an emitted yield signal and the
+observed kinematics. The detector has one design knob — the threshold **τ** —
+and the project optimizes it under three formulations:
 
-- **F1 — Scalarized:** weighted-sum loss over latency, false alarms, and missed detections, solved by golden-section search
-- **F2 — Constrained:** minimize latency subject to a false alarm bound, solved by both quadratic penalty and log-barrier outer-loop methods
-- **F3 — Multi-objective:** 50-point Pareto sweep over (latency, false-alarm rate, collision rate)
+| # | Formulation | Optimizer |
+|---|---|---|
+| **F1** | Scalarized weighted loss over latency / false-alarm / miss | Golden-section search |
+| **F2** | Min-latency subject to FA ≤ FA<sub>max</sub> | Quadratic penalty + log barrier |
+| **F3** | Pareto frontier over (latency, FA, collision rate) | 50-point sweep, dominance filter |
 
-Across all three, the optimal threshold varies by **20× across loss weights** and **25× across adversarial-prior assumptions**, meaning trust calibration isn't a tunable hyperparameter — it's a design decision tied to the deployment environment.
+Plus a sensitivity study (observation noise, adversarial rate, seed variance,
+oracle comparison) and a conflict-phase-gating ablation.
 
 ## Key results
 
@@ -46,10 +53,11 @@ Full writeup with system model, optimization formulations, sensitivity analyses,
 
 ## Tech stack
 
-- Python 3.11+
-- NumPy, matplotlib, seaborn for analysis and figures
-- Pillow for the animation GIF
-- No deep learning, no large dependencies — everything runs on CPU in under a minute per experiment
+- **Python 3.10+**
+- [`numpy`](https://numpy.org) + [`scipy`](https://scipy.org) — numerical primitives, golden-section search
+- [`matplotlib`](https://matplotlib.org) + [`seaborn`](https://seaborn.pydata.org) — figures
+
+CPU only — no GPU, no ML framework, no JAX/PyTorch. The full experiment grid runs in a few minutes on a laptop.
 
 ## Repository layout
 
@@ -92,25 +100,45 @@ Full writeup with system model, optimization formulations, sensitivity analyses,
 
 ## Running it
 
+Setup once:
+
 ```bash
-# Install dependencies
-pip install numpy matplotlib seaborn pillow pyyaml
-
-# Run individual experiments
-python -m experiments.optimize_threshold        # F1
-python -m experiments.constrained_optimization  # F2
-python -m experiments.pareto_analysis           # F3
-python -m experiments.sensitivity_sweep         # Sensitivity + oracle baseline
-python -m experiments.extended_experiments      # Seed variance + ablations
-
-# Generate figures
-python -m analysis.plot_pareto
-python -m analysis.plot_convergence
-python -m analysis.plot_sensitivity
-python -m analysis.animate_episodes             # Generates the GIF
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
-Each experiment writes results to `results/<experiment_name>/result.json`. Plotting scripts read those JSON files and write `.png`/`.pdf` figures next to them.
+Run the experiments — each writes a `result.json` (plus figures) into `results/`:
+
+```bash
+python -m experiments.optimize_threshold        # F1
+python -m experiments.constrained_optimization  # F2
+python -m experiments.pareto_analysis           # F3  (overlays F1+F2 optima — run those first)
+python -m experiments.sensitivity_sweep         # noise / adv-rate / seed / oracle sweeps
+python -m experiments.extended_experiments      # seed variance per method + gating ablation
+```
+
+Regenerate the figures from saved results:
+
+```bash
+python -m analysis.plot_convergence
+python -m analysis.plot_pareto
+python -m analysis.plot_sensitivity
+```
+
+## Method, in one paragraph
+
+The simulator runs two agents converging on an unsignalized intersection. One
+of them may be **deceptive** — emitting a yielding signal (σ=1) while failing
+to actually decelerate. The ego agent maintains a posterior `p_t ∈ [0,1]` over
+the other's type ∈ {yielder, non-yielder}, updates it from (noisy acceleration,
+signal) observations, and picks an action by minimizing
+`α P_coll(a, p) + β T_cross(a)` over a discrete action set. The detector
+computes a smoothed inconsistency score `s_t` from the *contradiction* between
+signal and kinematics; once `s_t > τ` it sticks ON for the rest of the episode
+and the agent's belief update drops the signal as evidence. The whole project
+is one design choice — picking **τ** — under three different statements of
+what "good" means.
 
 ## Background
 
@@ -124,9 +152,4 @@ References for the techniques used:
 
 ## License
 
-[MIT](LICENSE)
-
-## Author
-
-Lea M. Hadzic  
-_Department of Computer Science, Stanford University_
+MIT — see [LICENSE](LICENSE).
