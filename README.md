@@ -55,28 +55,39 @@ Full writeup with system model, optimization formulations, sensitivity analyses,
 
 ```
 .
-├── src/                   # Core simulation
-│   ├── agent.py           # Two-agent intersection state
-│   ├── simulator.py       # Episode runner
-│   ├── beliefs.py         # Bayesian update over yield/non-yield types
-│   ├── objective.py       # Simplified EFE action selection
-│   ├── adversarial.py     # Honest yielder, non-yielder, deceptive policies
-│   ├── detection.py       # Inconsistency detector
-│   └── evaluation.py      # Aggregate metrics over an ensemble of episodes
-├── experiments/
-│   ├── optimize_threshold.py        # F1: golden-section search
-│   ├── constrained_optimization.py  # F2: penalty + barrier methods
-│   ├── pareto_analysis.py           # F3: Pareto frontier sweep
-│   ├── sensitivity_sweep.py         # Noise, adversarial rate, oracle baseline
-│   └── extended_experiments.py      # Seed variance + conflict-gating ablation
-├── analysis/
-│   ├── plot_pareto.py
-│   ├── plot_convergence.py
-│   ├── plot_sensitivity.py
-│   └── animate_episodes.py
-├── configs/default.yaml
-├── tests/
-└── paper/                 # LaTeX source + final PDF
+├── README.md                          project overview + reproduce instructions
+├── paper.pdf                          final write-up
+├── episode_comparison.gif             README animation
+├── requirements.txt                   Python dependencies
+├── LICENSE                            MIT
+│
+├── src/                               library code
+│   ├── agent.py                       kinematic agent state
+│   ├── simulator.py                   2-agent intersection sim
+│   ├── beliefs.py                     Bayesian belief update over intent
+│   ├── objective.py                   EFE-style action selection
+│   ├── adversarial.py                 honest / deceptive other-agent policies
+│   ├── detection.py                   inconsistency score + threshold detector
+│   └── evaluation.py                  harness that turns τ into aggregate metrics
+│
+├── experiments/                       one runnable script per experiment
+│   ├── optimize_threshold.py          F1: 1-D τ optimization (golden section)
+│   ├── constrained_optimization.py    F2: penalty + log-barrier
+│   ├── pareto_analysis.py             F3: Pareto sweep
+│   ├── sensitivity_sweep.py           noise / adv-rate / seed-variance / oracle
+│   └── extended_experiments.py        seed variance per method + gating ablation
+│
+├── analysis/                          figures (read results/, write PNG + PDF)
+│   ├── plot_convergence.py            F1/F2 convergence
+│   ├── plot_pareto.py                 F3 frontier
+│   └── plot_sensitivity.py            sensitivity figure
+│
+└── results/                           generated outputs (committed for reproducibility)
+    ├── optimize_threshold/            F1 result.json + figures, per weight setting
+    ├── constrained_optimization/      F2 result.json + figures
+    ├── pareto_analysis/               F3 result.json + frontier figure
+    ├── sensitivity/                   sensitivity sweeps
+    └── rigor/                         seed variance + ablation
 ```
 
 ## Running it
