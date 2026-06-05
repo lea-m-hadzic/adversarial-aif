@@ -8,9 +8,9 @@
 
 This project formulates that question as an optimization problem. A naive active-inference agent that trusts yield signals collides in **100% of deterministic adversarial encounters**. Adding a single-parameter inconsistency detector eliminates the failure mode and matches a ground-truth oracle in collision prevention.
 
-[ gif ]
+![GIF](episode_comparison.gif)
 
-*Left: a naive agent trusts A's yield signal and collides. Right: the same scenario with an inconsistency detector — B identifies the deception, brakes, and yields safely. Both panels use identical initial conditions and the same adversary.*
+*Left: a naive agent trusts A's yield signal — even as A accelerates into the intersection — and collides. Right: the same scenario with an inconsistency detector; the score climbs as the signal contradicts A's motion, B brakes, and yields safely. Both panels use identical initial conditions and the same adversary.*
 
 ---
 
