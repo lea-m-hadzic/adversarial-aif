@@ -128,4 +128,5 @@ References for the techniques used:
 
 ## Author
 
-**Lea M. Hadzic** — Stanford Computer Science  
+Lea M. Hadzic  
+_Department of Computer Science, Stanford University_
