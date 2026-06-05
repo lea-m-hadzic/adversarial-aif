@@ -42,7 +42,7 @@ Across all three, the optimal threshold varies by **20× across loss weights** a
 
 Full writeup with system model, optimization formulations, sensitivity analyses, and ablations:
 
-📄 **[Final paper (PDF)](paper/CS361_Final_Project.pdf)** — IEEE 2-column, 5 pages
+📄 **[Final paper (PDF)](paper.pdf)** — IEEE 2-column, 5 pages
 
 ## Tech stack
 
