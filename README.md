@@ -1,4 +1,8 @@
+<div align="center">
+
 # Optimizing Active Inference Agents for Robustness to Adversarial Behavior in Traffic Interactions
+
+</div>
 
 > When a self-driving car sees another driver flip on their yield indicator while accelerating into the intersection, who should it trust — the signal, or the motion?
 
