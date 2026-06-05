@@ -129,4 +129,3 @@ References for the techniques used:
 ## Author
 
 **Lea M. Hadzic** — Stanford Computer Science  
-Final project for CS 361 / AA 222 (Engineering Design Optimization), Spring 2026.
