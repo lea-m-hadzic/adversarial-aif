@@ -1,0 +1,21 @@
+{
+  "sweep": "oracle_comparison",
+  "oracle": {
+    "collision_rate": 0.015,
+    "deadlock_rate": 0.0,
+    "cleared_rate": 0.98
+  },
+  "detector": {
+    "tau": 0.6437384985980785,
+    "collision_rate": 0.015,
+    "deadlock_rate": 0.0,
+    "cleared_rate": 0.98,
+    "false_alarm_rate": 0.05
+  },
+  "naive": {
+    "collision_rate": 0.04,
+    "deadlock_rate": 0.0,
+    "cleared_rate": 0.955
+  },
+  "fraction_of_gap_recovered": 1.0
+}

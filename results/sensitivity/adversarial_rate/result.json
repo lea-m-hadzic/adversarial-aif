@@ -1,0 +1,46 @@
+{
+  "sweep": "adversarial_rate",
+  "fa_max": 0.05,
+  "results": [
+    {
+      "adversarial_rate": 0.1,
+      "tau": 0.9996370969692505,
+      "latency": 0.2521739130434783,
+      "false_alarm_rate": 0.06,
+      "collision_rate": 0.015,
+      "recall": 0.8214285714285714
+    },
+    {
+      "adversarial_rate": 0.3,
+      "tau": 0.8004758072708524,
+      "latency": 0.29591836734693877,
+      "false_alarm_rate": 0.05,
+      "collision_rate": 0.015,
+      "recall": 0.8032786885245902
+    },
+    {
+      "adversarial_rate": 0.5,
+      "tau": 0.6437384985980785,
+      "latency": 0.24523809523809526,
+      "false_alarm_rate": 0.05,
+      "collision_rate": 0.015,
+      "recall": 0.7924528301886793
+    },
+    {
+      "adversarial_rate": 0.7,
+      "tau": 0.4927017447400382,
+      "latency": 0.1991228070175439,
+      "false_alarm_rate": 0.045,
+      "collision_rate": 0.015,
+      "recall": 0.7916666666666666
+    },
+    {
+      "adversarial_rate": 0.9,
+      "tau": 0.03713683173516942,
+      "latency": 0.07027027027027027,
+      "false_alarm_rate": 0.045,
+      "collision_rate": 0.01,
+      "recall": 0.8314606741573034
+    }
+  ]
+}

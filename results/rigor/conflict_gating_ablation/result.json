@@ -1,0 +1,125 @@
+{
+  "experiment": "conflict_gating_ablation",
+  "results": [
+    {
+      "tau": 0.1,
+      "with_gating": {
+        "tau": 0.1,
+        "collision_rate": 0.015,
+        "deadlock_rate": 0.0,
+        "cleared_rate": 0.965,
+        "mean_crossing_time": 4.88860103626943,
+        "mean_detection_latency": 0.11333333333333334,
+        "false_alarm_rate": 0.165,
+        "detection_recall": 0.8490566037735849,
+        "n_adversarial": 106,
+        "n_honest": 94
+      },
+      "without_gating": {
+        "tau": 0.1,
+        "collision_rate": 0.015,
+        "mean_detection_latency": 0.10471698113207549,
+        "false_alarm_rate": 0.165,
+        "detection_recall": 1.0,
+        "n_adversarial": 106,
+        "n_honest": 94
+      }
+    },
+    {
+      "tau": 0.3,
+      "with_gating": {
+        "tau": 0.3,
+        "collision_rate": 0.015,
+        "deadlock_rate": 0.0,
+        "cleared_rate": 0.97,
+        "mean_crossing_time": 4.892268041237114,
+        "mean_detection_latency": 0.15227272727272728,
+        "false_alarm_rate": 0.135,
+        "detection_recall": 0.8301886792452831,
+        "n_adversarial": 106,
+        "n_honest": 94
+      },
+      "without_gating": {
+        "tau": 0.3,
+        "collision_rate": 0.015,
+        "mean_detection_latency": 0.16320754716981134,
+        "false_alarm_rate": 0.135,
+        "detection_recall": 1.0,
+        "n_adversarial": 106,
+        "n_honest": 94
+      }
+    },
+    {
+      "tau": 0.5,
+      "with_gating": {
+        "tau": 0.5,
+        "collision_rate": 0.015,
+        "deadlock_rate": 0.0,
+        "cleared_rate": 0.975,
+        "mean_crossing_time": 4.886153846153847,
+        "mean_detection_latency": 0.20697674418604653,
+        "false_alarm_rate": 0.085,
+        "detection_recall": 0.8113207547169812,
+        "n_adversarial": 106,
+        "n_honest": 94
+      },
+      "without_gating": {
+        "tau": 0.5,
+        "collision_rate": 0.015,
+        "mean_detection_latency": 0.2339622641509434,
+        "false_alarm_rate": 0.085,
+        "detection_recall": 1.0,
+        "n_adversarial": 106,
+        "n_honest": 94
+      }
+    },
+    {
+      "tau": 0.7,
+      "with_gating": {
+        "tau": 0.7,
+        "collision_rate": 0.02,
+        "deadlock_rate": 0.0,
+        "cleared_rate": 0.975,
+        "mean_crossing_time": 4.889230769230769,
+        "mean_detection_latency": 0.27195121951219514,
+        "false_alarm_rate": 0.05,
+        "detection_recall": 0.7735849056603774,
+        "n_adversarial": 106,
+        "n_honest": 94
+      },
+      "without_gating": {
+        "tau": 0.7,
+        "collision_rate": 0.02,
+        "mean_detection_latency": 0.32285714285714284,
+        "false_alarm_rate": 0.05,
+        "detection_recall": 0.9905660377358491,
+        "n_adversarial": 106,
+        "n_honest": 94
+      }
+    },
+    {
+      "tau": 1.0,
+      "with_gating": {
+        "tau": 1.0,
+        "collision_rate": 0.025,
+        "deadlock_rate": 0.0,
+        "cleared_rate": 0.97,
+        "mean_crossing_time": 4.881958762886598,
+        "mean_detection_latency": 0.4013513513513514,
+        "false_alarm_rate": 0.03,
+        "detection_recall": 0.6981132075471698,
+        "n_adversarial": 106,
+        "n_honest": 94
+      },
+      "without_gating": {
+        "tau": 1.0,
+        "collision_rate": 0.025,
+        "mean_detection_latency": 0.4823529411764706,
+        "false_alarm_rate": 0.03,
+        "detection_recall": 0.9622641509433962,
+        "n_adversarial": 106,
+        "n_honest": 94
+      }
+    }
+  ]
+}

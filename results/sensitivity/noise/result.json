@@ -1,0 +1,2110 @@
+{
+  "sweep": "noise",
+  "results": [
+    {
+      "sigma": 0.5,
+      "f1_best_tau": 0.01958659447572073,
+      "f1_best_loss": 0.847931785195936,
+      "f1_best_result": {
+        "tau": 0.01958659447572073,
+        "collision_rate": 0.015,
+        "deadlock_rate": 0.0,
+        "cleared_rate": 0.98,
+        "mean_crossing_time": 4.943367346938776,
+        "mean_detection_latency": 0.015384615384615385,
+        "false_alarm_rate": 0.025,
+        "detection_recall": 0.8584905660377359,
+        "n_adversarial": 106,
+        "n_honest": 94
+      },
+      "pareto_n_points": 50,
+      "pareto_n_frontier": 6,
+      "pareto_points": [
+        {
+          "tau": 0.02,
+          "latency": 0.016483516483516484,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.8584905660377359,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.04,
+          "latency": 0.02087912087912088,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.8584905660377359,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.06,
+          "latency": 0.038461538461538464,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.8584905660377359,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.08,
+          "latency": 0.05164835164835165,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.8584905660377359,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.1,
+          "latency": 0.06373626373626375,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.8584905660377359,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.12,
+          "latency": 0.07692307692307693,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.8584905660377359,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.14,
+          "latency": 0.09,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.8490566037735849,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.16,
+          "latency": 0.10444444444444445,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.8490566037735849,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.18,
+          "latency": 0.12000000000000001,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.8490566037735849,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.2,
+          "latency": 0.1314606741573034,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.839622641509434,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.22,
+          "latency": 0.15056179775280898,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.839622641509434,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.24,
+          "latency": 0.15842696629213485,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.839622641509434,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.26,
+          "latency": 0.18202247191011234,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.02,
+          "recall": 0.839622641509434,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.28,
+          "latency": 0.19325842696629214,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.02,
+          "recall": 0.839622641509434,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.3,
+          "latency": 0.21363636363636365,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.02,
+          "recall": 0.8301886792452831,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.32,
+          "latency": 0.2232558139534884,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.02,
+          "recall": 0.8113207547169812,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.34,
+          "latency": 0.24651162790697678,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.02,
+          "recall": 0.8113207547169812,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.36,
+          "latency": 0.2571428571428572,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.02,
+          "recall": 0.7924528301886793,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.38,
+          "latency": 0.28271604938271605,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.02,
+          "recall": 0.7641509433962265,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.4,
+          "latency": 0.312987012987013,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.02,
+          "recall": 0.7264150943396226,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.42,
+          "latency": 0.35657894736842105,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.02,
+          "recall": 0.7169811320754716,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.44,
+          "latency": 0.3746666666666667,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.02,
+          "recall": 0.7075471698113207,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.46,
+          "latency": 0.3888888888888889,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.6792452830188679,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.48,
+          "latency": 0.4085714285714286,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.660377358490566,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.5,
+          "latency": 0.4385714285714286,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.660377358490566,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.52,
+          "latency": 0.46417910447761196,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.6320754716981132,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.54,
+          "latency": 0.5603174603174604,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.025,
+          "recall": 0.5943396226415094,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.56,
+          "latency": 0.6233333333333333,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.025,
+          "recall": 0.5660377358490566,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.58,
+          "latency": 0.6844827586206897,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.025,
+          "recall": 0.5471698113207547,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.6,
+          "latency": 0.7589285714285714,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.025,
+          "recall": 0.5283018867924528,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.62,
+          "latency": 0.8056603773584906,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.025,
+          "recall": 0.5,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.64,
+          "latency": 0.8634615384615386,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.025,
+          "recall": 0.49056603773584906,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.66,
+          "latency": 0.9,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.025,
+          "recall": 0.46226415094339623,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.68,
+          "latency": 0.9347826086956522,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.025,
+          "recall": 0.4339622641509434,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.7,
+          "latency": 1.0095238095238097,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.03,
+          "recall": 0.39622641509433965,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.72,
+          "latency": 1.0108108108108107,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.03,
+          "recall": 0.3490566037735849,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.74,
+          "latency": 1.021875,
+          "false_alarm_rate": 0.015,
+          "collision_rate": 0.03,
+          "recall": 0.3018867924528302,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.76,
+          "latency": 1.0766666666666669,
+          "false_alarm_rate": 0.015,
+          "collision_rate": 0.03,
+          "recall": 0.2830188679245283,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.78,
+          "latency": 1.1615384615384616,
+          "false_alarm_rate": 0.015,
+          "collision_rate": 0.03,
+          "recall": 0.24528301886792453,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.8,
+          "latency": 1.2260869565217392,
+          "false_alarm_rate": 0.01,
+          "collision_rate": 0.03,
+          "recall": 0.2169811320754717,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.82,
+          "latency": 1.2347826086956524,
+          "false_alarm_rate": 0.01,
+          "collision_rate": 0.03,
+          "recall": 0.2169811320754717,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.84,
+          "latency": 1.3055555555555556,
+          "false_alarm_rate": 0.005,
+          "collision_rate": 0.03,
+          "recall": 0.16981132075471697,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.86,
+          "latency": 1.292857142857143,
+          "false_alarm_rate": 0.005,
+          "collision_rate": 0.035,
+          "recall": 0.1320754716981132,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.88,
+          "latency": 1.3692307692307693,
+          "false_alarm_rate": 0.005,
+          "collision_rate": 0.035,
+          "recall": 0.12264150943396226,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.9,
+          "latency": 1.3499999999999999,
+          "false_alarm_rate": 0.005,
+          "collision_rate": 0.035,
+          "recall": 0.11320754716981132,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.92,
+          "latency": 1.4454545454545455,
+          "false_alarm_rate": 0.005,
+          "collision_rate": 0.035,
+          "recall": 0.10377358490566038,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.94,
+          "latency": 1.7142857142857142,
+          "false_alarm_rate": 0.005,
+          "collision_rate": 0.035,
+          "recall": 0.0660377358490566,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.96,
+          "latency": 1.866666666666667,
+          "false_alarm_rate": 0.005,
+          "collision_rate": 0.035,
+          "recall": 0.05660377358490566,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.98,
+          "latency": 2.0,
+          "false_alarm_rate": 0.005,
+          "collision_rate": 0.035,
+          "recall": 0.03773584905660377,
+          "is_pareto": false
+        },
+        {
+          "tau": 1.0,
+          "latency": 1.9333333333333336,
+          "false_alarm_rate": 0.005,
+          "collision_rate": 0.035,
+          "recall": 0.02830188679245283,
+          "is_pareto": false
+        }
+      ]
+    },
+    {
+      "sigma": 1.0,
+      "f1_best_tau": 0.02528714929045464,
+      "f1_best_loss": 0.9451845324486833,
+      "f1_best_result": {
+        "tau": 0.02528714929045464,
+        "collision_rate": 0.015,
+        "deadlock_rate": 0.0,
+        "cleared_rate": 0.98,
+        "mean_crossing_time": 4.951020408163266,
+        "mean_detection_latency": 0.06263736263736264,
+        "false_alarm_rate": 0.035,
+        "detection_recall": 0.8584905660377359,
+        "n_adversarial": 106,
+        "n_honest": 94
+      },
+      "pareto_n_points": 50,
+      "pareto_n_frontier": 6,
+      "pareto_points": [
+        {
+          "tau": 0.02,
+          "latency": 0.06153846153846154,
+          "false_alarm_rate": 0.04,
+          "collision_rate": 0.015,
+          "recall": 0.8584905660377359,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.04,
+          "latency": 0.06593406593406594,
+          "false_alarm_rate": 0.035,
+          "collision_rate": 0.015,
+          "recall": 0.8584905660377359,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.06,
+          "latency": 0.06813186813186814,
+          "false_alarm_rate": 0.035,
+          "collision_rate": 0.015,
+          "recall": 0.8584905660377359,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.08,
+          "latency": 0.08,
+          "false_alarm_rate": 0.035,
+          "collision_rate": 0.015,
+          "recall": 0.8490566037735849,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.1,
+          "latency": 0.08666666666666667,
+          "false_alarm_rate": 0.03,
+          "collision_rate": 0.015,
+          "recall": 0.8490566037735849,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.12,
+          "latency": 0.10444444444444445,
+          "false_alarm_rate": 0.03,
+          "collision_rate": 0.015,
+          "recall": 0.8490566037735849,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.14,
+          "latency": 0.10898876404494383,
+          "false_alarm_rate": 0.03,
+          "collision_rate": 0.015,
+          "recall": 0.839622641509434,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.16,
+          "latency": 0.11685393258426967,
+          "false_alarm_rate": 0.03,
+          "collision_rate": 0.015,
+          "recall": 0.839622641509434,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.18,
+          "latency": 0.12359550561797752,
+          "false_alarm_rate": 0.03,
+          "collision_rate": 0.015,
+          "recall": 0.839622641509434,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.2,
+          "latency": 0.12386363636363637,
+          "false_alarm_rate": 0.03,
+          "collision_rate": 0.015,
+          "recall": 0.8301886792452831,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.22,
+          "latency": 0.13636363636363635,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.8301886792452831,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.24,
+          "latency": 0.14545454545454548,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.8301886792452831,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.26,
+          "latency": 0.1590909090909091,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.8301886792452831,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.28,
+          "latency": 0.17011494252873563,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.8207547169811321,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.3,
+          "latency": 0.17931034482758623,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.8207547169811321,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.32,
+          "latency": 0.19310344827586207,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.8207547169811321,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.34,
+          "latency": 0.1988372093023256,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.8113207547169812,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.36,
+          "latency": 0.2058139534883721,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.8113207547169812,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.38,
+          "latency": 0.21976744186046515,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.8113207547169812,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.4,
+          "latency": 0.2302325581395349,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.8113207547169812,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.42,
+          "latency": 0.23372093023255816,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.8113207547169812,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.44,
+          "latency": 0.2458823529411765,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.8018867924528302,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.46,
+          "latency": 0.25411764705882356,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.8018867924528302,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.48,
+          "latency": 0.28271604938271605,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.7641509433962265,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.5,
+          "latency": 0.2987654320987655,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.7641509433962265,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.52,
+          "latency": 0.32,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.7547169811320755,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.54,
+          "latency": 0.3333333333333333,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.015,
+          "recall": 0.7358490566037735,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.56,
+          "latency": 0.33896103896103896,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.015,
+          "recall": 0.7264150943396226,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.58,
+          "latency": 0.3618421052631579,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.7169811320754716,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.6,
+          "latency": 0.3567567567567568,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.6981132075471698,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.62,
+          "latency": 0.3904109589041096,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.6886792452830188,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.64,
+          "latency": 0.4277777777777778,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.6792452830188679,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.66,
+          "latency": 0.43661971830985913,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.6698113207547169,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.68,
+          "latency": 0.4632352941176471,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.6415094339622641,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.7,
+          "latency": 0.4753846153846154,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.6132075471698113,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.72,
+          "latency": 0.5290322580645161,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.5849056603773585,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.74,
+          "latency": 0.5387096774193548,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.5849056603773585,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.76,
+          "latency": 0.5836065573770493,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.5754716981132075,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.78,
+          "latency": 0.6163934426229508,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.5754716981132075,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.8,
+          "latency": 0.6677966101694917,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.5566037735849056,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.82,
+          "latency": 0.7379310344827587,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.5471698113207547,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.84,
+          "latency": 0.7800000000000001,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.5188679245283019,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.86,
+          "latency": 0.8150943396226416,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.5,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.88,
+          "latency": 0.8529411764705882,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.4811320754716981,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.9,
+          "latency": 0.8568627450980393,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.4811320754716981,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.92,
+          "latency": 0.8795918367346939,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.46226415094339623,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.94,
+          "latency": 0.9170212765957447,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.44339622641509435,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.96,
+          "latency": 0.9413043478260871,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.4339622641509434,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.98,
+          "latency": 0.944186046511628,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.4056603773584906,
+          "is_pareto": false
+        },
+        {
+          "tau": 1.0,
+          "latency": 0.9500000000000002,
+          "false_alarm_rate": 0.015,
+          "collision_rate": 0.02,
+          "recall": 0.39622641509433965,
+          "is_pareto": true
+        }
+      ]
+    },
+    {
+      "sigma": 1.5,
+      "f1_best_tau": 0.34798545808097403,
+      "f1_best_loss": 1.2755367599219256,
+      "f1_best_result": {
+        "tau": 0.34798545808097403,
+        "collision_rate": 0.015,
+        "deadlock_rate": 0.0,
+        "cleared_rate": 0.98,
+        "mean_crossing_time": 4.933673469387755,
+        "mean_detection_latency": 0.17931034482758623,
+        "false_alarm_rate": 0.04,
+        "detection_recall": 0.8207547169811321,
+        "n_adversarial": 106,
+        "n_honest": 94
+      },
+      "pareto_n_points": 50,
+      "pareto_n_frontier": 15,
+      "pareto_points": [
+        {
+          "tau": 0.02,
+          "latency": 0.06813186813186814,
+          "false_alarm_rate": 0.135,
+          "collision_rate": 0.015,
+          "recall": 0.8584905660377359,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.04,
+          "latency": 0.08,
+          "false_alarm_rate": 0.135,
+          "collision_rate": 0.015,
+          "recall": 0.8490566037735849,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.06,
+          "latency": 0.08333333333333333,
+          "false_alarm_rate": 0.125,
+          "collision_rate": 0.015,
+          "recall": 0.8490566037735849,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.08,
+          "latency": 0.09666666666666668,
+          "false_alarm_rate": 0.125,
+          "collision_rate": 0.015,
+          "recall": 0.8490566037735849,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.1,
+          "latency": 0.10777777777777779,
+          "false_alarm_rate": 0.11,
+          "collision_rate": 0.015,
+          "recall": 0.8490566037735849,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.12,
+          "latency": 0.1111111111111111,
+          "false_alarm_rate": 0.105,
+          "collision_rate": 0.015,
+          "recall": 0.8490566037735849,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.14,
+          "latency": 0.1056818181818182,
+          "false_alarm_rate": 0.1,
+          "collision_rate": 0.015,
+          "recall": 0.8301886792452831,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.16,
+          "latency": 0.11022727272727274,
+          "false_alarm_rate": 0.085,
+          "collision_rate": 0.015,
+          "recall": 0.8301886792452831,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.18,
+          "latency": 0.11931818181818182,
+          "false_alarm_rate": 0.075,
+          "collision_rate": 0.015,
+          "recall": 0.8301886792452831,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.2,
+          "latency": 0.12045454545454547,
+          "false_alarm_rate": 0.075,
+          "collision_rate": 0.015,
+          "recall": 0.8301886792452831,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.22,
+          "latency": 0.1272727272727273,
+          "false_alarm_rate": 0.075,
+          "collision_rate": 0.015,
+          "recall": 0.8301886792452831,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.24,
+          "latency": 0.14204545454545456,
+          "false_alarm_rate": 0.065,
+          "collision_rate": 0.015,
+          "recall": 0.8301886792452831,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.26,
+          "latency": 0.14545454545454548,
+          "false_alarm_rate": 0.06,
+          "collision_rate": 0.015,
+          "recall": 0.8301886792452831,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.28,
+          "latency": 0.15681818181818183,
+          "false_alarm_rate": 0.055,
+          "collision_rate": 0.015,
+          "recall": 0.8301886792452831,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.3,
+          "latency": 0.16091954022988506,
+          "false_alarm_rate": 0.05,
+          "collision_rate": 0.015,
+          "recall": 0.8207547169811321,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.32,
+          "latency": 0.17011494252873563,
+          "false_alarm_rate": 0.05,
+          "collision_rate": 0.015,
+          "recall": 0.8207547169811321,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.34,
+          "latency": 0.17931034482758623,
+          "false_alarm_rate": 0.045,
+          "collision_rate": 0.015,
+          "recall": 0.8207547169811321,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.36,
+          "latency": 0.18953488372093025,
+          "false_alarm_rate": 0.04,
+          "collision_rate": 0.015,
+          "recall": 0.8113207547169812,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.38,
+          "latency": 0.19767441860465115,
+          "false_alarm_rate": 0.04,
+          "collision_rate": 0.015,
+          "recall": 0.8113207547169812,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.4,
+          "latency": 0.20232558139534887,
+          "false_alarm_rate": 0.04,
+          "collision_rate": 0.015,
+          "recall": 0.8113207547169812,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.42,
+          "latency": 0.2046511627906977,
+          "false_alarm_rate": 0.035,
+          "collision_rate": 0.015,
+          "recall": 0.8113207547169812,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.44,
+          "latency": 0.2127906976744186,
+          "false_alarm_rate": 0.035,
+          "collision_rate": 0.015,
+          "recall": 0.8113207547169812,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.46,
+          "latency": 0.21511627906976744,
+          "false_alarm_rate": 0.035,
+          "collision_rate": 0.015,
+          "recall": 0.8113207547169812,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.48,
+          "latency": 0.2232558139534884,
+          "false_alarm_rate": 0.035,
+          "collision_rate": 0.015,
+          "recall": 0.8113207547169812,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.5,
+          "latency": 0.22941176470588234,
+          "false_alarm_rate": 0.035,
+          "collision_rate": 0.015,
+          "recall": 0.8018867924528302,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.52,
+          "latency": 0.23411764705882354,
+          "false_alarm_rate": 0.03,
+          "collision_rate": 0.015,
+          "recall": 0.8018867924528302,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.54,
+          "latency": 0.24404761904761904,
+          "false_alarm_rate": 0.03,
+          "collision_rate": 0.015,
+          "recall": 0.7924528301886793,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.56,
+          "latency": 0.2547619047619048,
+          "false_alarm_rate": 0.03,
+          "collision_rate": 0.015,
+          "recall": 0.7924528301886793,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.58,
+          "latency": 0.27590361445783135,
+          "false_alarm_rate": 0.03,
+          "collision_rate": 0.015,
+          "recall": 0.7830188679245284,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.6,
+          "latency": 0.28313253012048195,
+          "false_alarm_rate": 0.03,
+          "collision_rate": 0.015,
+          "recall": 0.7830188679245284,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.62,
+          "latency": 0.2864197530864198,
+          "false_alarm_rate": 0.03,
+          "collision_rate": 0.015,
+          "recall": 0.7641509433962265,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.64,
+          "latency": 0.30617283950617286,
+          "false_alarm_rate": 0.03,
+          "collision_rate": 0.02,
+          "recall": 0.7641509433962265,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.66,
+          "latency": 0.31538461538461543,
+          "false_alarm_rate": 0.03,
+          "collision_rate": 0.02,
+          "recall": 0.7358490566037735,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.68,
+          "latency": 0.32337662337662343,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.02,
+          "recall": 0.7264150943396226,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.7,
+          "latency": 0.33815789473684216,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.02,
+          "recall": 0.7169811320754716,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.72,
+          "latency": 0.3460526315789474,
+          "false_alarm_rate": 0.025,
+          "collision_rate": 0.02,
+          "recall": 0.7169811320754716,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.74,
+          "latency": 0.3539473684210527,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.7169811320754716,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.76,
+          "latency": 0.3527027027027027,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.6981132075471698,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.78,
+          "latency": 0.37702702702702706,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.6981132075471698,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.8,
+          "latency": 0.39594594594594595,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.6981132075471698,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.82,
+          "latency": 0.4068493150684932,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.6886792452830188,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.84,
+          "latency": 0.426027397260274,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.6886792452830188,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.86,
+          "latency": 0.44,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.660377358490566,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.88,
+          "latency": 0.48695652173913045,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.6509433962264151,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.9,
+          "latency": 0.5030769230769231,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.02,
+          "recall": 0.6132075471698113,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.92,
+          "latency": 0.51875,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.025,
+          "recall": 0.6037735849056604,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.94,
+          "latency": 0.5317460317460317,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.025,
+          "recall": 0.5943396226415094,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.96,
+          "latency": 0.5483870967741935,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.025,
+          "recall": 0.5849056603773585,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.98,
+          "latency": 0.5885245901639344,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.025,
+          "recall": 0.5754716981132075,
+          "is_pareto": false
+        },
+        {
+          "tau": 1.0,
+          "latency": 0.6066666666666667,
+          "false_alarm_rate": 0.02,
+          "collision_rate": 0.025,
+          "recall": 0.5660377358490566,
+          "is_pareto": false
+        }
+      ]
+    },
+    {
+      "sigma": 2.0,
+      "f1_best_tau": 0.5386488623958998,
+      "f1_best_loss": 1.559675296182536,
+      "f1_best_result": {
+        "tau": 0.5386488623958998,
+        "collision_rate": 0.015,
+        "deadlock_rate": 0.0,
+        "cleared_rate": 0.975,
+        "mean_crossing_time": 4.886153846153847,
+        "mean_detection_latency": 0.21627906976744188,
+        "false_alarm_rate": 0.08,
+        "detection_recall": 0.8113207547169812,
+        "n_adversarial": 106,
+        "n_honest": 94
+      },
+      "pareto_n_points": 50,
+      "pareto_n_frontier": 19,
+      "pareto_points": [
+        {
+          "tau": 0.02,
+          "latency": 0.08111111111111112,
+          "false_alarm_rate": 0.175,
+          "collision_rate": 0.015,
+          "recall": 0.8490566037735849,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.04,
+          "latency": 0.08555555555555555,
+          "false_alarm_rate": 0.165,
+          "collision_rate": 0.015,
+          "recall": 0.8490566037735849,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.06,
+          "latency": 0.09888888888888889,
+          "false_alarm_rate": 0.165,
+          "collision_rate": 0.015,
+          "recall": 0.8490566037735849,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.08,
+          "latency": 0.1088888888888889,
+          "false_alarm_rate": 0.165,
+          "collision_rate": 0.015,
+          "recall": 0.8490566037735849,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.1,
+          "latency": 0.11333333333333334,
+          "false_alarm_rate": 0.165,
+          "collision_rate": 0.015,
+          "recall": 0.8490566037735849,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.12,
+          "latency": 0.10340909090909091,
+          "false_alarm_rate": 0.165,
+          "collision_rate": 0.015,
+          "recall": 0.8301886792452831,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.14,
+          "latency": 0.11022727272727274,
+          "false_alarm_rate": 0.155,
+          "collision_rate": 0.015,
+          "recall": 0.8301886792452831,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.16,
+          "latency": 0.11022727272727274,
+          "false_alarm_rate": 0.15,
+          "collision_rate": 0.015,
+          "recall": 0.8301886792452831,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.18,
+          "latency": 0.11590909090909092,
+          "false_alarm_rate": 0.15,
+          "collision_rate": 0.015,
+          "recall": 0.8301886792452831,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.2,
+          "latency": 0.11931818181818182,
+          "false_alarm_rate": 0.15,
+          "collision_rate": 0.015,
+          "recall": 0.8301886792452831,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.22,
+          "latency": 0.1215909090909091,
+          "false_alarm_rate": 0.15,
+          "collision_rate": 0.015,
+          "recall": 0.8301886792452831,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.24,
+          "latency": 0.13295454545454546,
+          "false_alarm_rate": 0.15,
+          "collision_rate": 0.015,
+          "recall": 0.8301886792452831,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.26,
+          "latency": 0.1375,
+          "false_alarm_rate": 0.14,
+          "collision_rate": 0.015,
+          "recall": 0.8301886792452831,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.28,
+          "latency": 0.14772727272727273,
+          "false_alarm_rate": 0.135,
+          "collision_rate": 0.015,
+          "recall": 0.8301886792452831,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.3,
+          "latency": 0.15227272727272728,
+          "false_alarm_rate": 0.135,
+          "collision_rate": 0.015,
+          "recall": 0.8301886792452831,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.32,
+          "latency": 0.1574712643678161,
+          "false_alarm_rate": 0.13,
+          "collision_rate": 0.015,
+          "recall": 0.8207547169811321,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.34,
+          "latency": 0.16091954022988506,
+          "false_alarm_rate": 0.13,
+          "collision_rate": 0.015,
+          "recall": 0.8207547169811321,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.36,
+          "latency": 0.17126436781609194,
+          "false_alarm_rate": 0.13,
+          "collision_rate": 0.015,
+          "recall": 0.8207547169811321,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.38,
+          "latency": 0.17931034482758623,
+          "false_alarm_rate": 0.12,
+          "collision_rate": 0.015,
+          "recall": 0.8207547169811321,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.4,
+          "latency": 0.18372093023255814,
+          "false_alarm_rate": 0.12,
+          "collision_rate": 0.015,
+          "recall": 0.8113207547169812,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.42,
+          "latency": 0.19069767441860466,
+          "false_alarm_rate": 0.12,
+          "collision_rate": 0.015,
+          "recall": 0.8113207547169812,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.44,
+          "latency": 0.19999999999999998,
+          "false_alarm_rate": 0.115,
+          "collision_rate": 0.015,
+          "recall": 0.8113207547169812,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.46,
+          "latency": 0.2046511627906977,
+          "false_alarm_rate": 0.105,
+          "collision_rate": 0.015,
+          "recall": 0.8113207547169812,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.48,
+          "latency": 0.2046511627906977,
+          "false_alarm_rate": 0.09,
+          "collision_rate": 0.015,
+          "recall": 0.8113207547169812,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.5,
+          "latency": 0.20697674418604653,
+          "false_alarm_rate": 0.085,
+          "collision_rate": 0.015,
+          "recall": 0.8113207547169812,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.52,
+          "latency": 0.21046511627906977,
+          "false_alarm_rate": 0.085,
+          "collision_rate": 0.015,
+          "recall": 0.8113207547169812,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.54,
+          "latency": 0.21411764705882352,
+          "false_alarm_rate": 0.08,
+          "collision_rate": 0.015,
+          "recall": 0.8018867924528302,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.56,
+          "latency": 0.21529411764705883,
+          "false_alarm_rate": 0.08,
+          "collision_rate": 0.015,
+          "recall": 0.8018867924528302,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.58,
+          "latency": 0.23176470588235298,
+          "false_alarm_rate": 0.075,
+          "collision_rate": 0.015,
+          "recall": 0.8018867924528302,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.6,
+          "latency": 0.23411764705882354,
+          "false_alarm_rate": 0.07,
+          "collision_rate": 0.015,
+          "recall": 0.8018867924528302,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.62,
+          "latency": 0.23809523809523808,
+          "false_alarm_rate": 0.065,
+          "collision_rate": 0.015,
+          "recall": 0.7924528301886793,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.64,
+          "latency": 0.24523809523809526,
+          "false_alarm_rate": 0.05,
+          "collision_rate": 0.015,
+          "recall": 0.7924528301886793,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.66,
+          "latency": 0.25301204819277107,
+          "false_alarm_rate": 0.05,
+          "collision_rate": 0.015,
+          "recall": 0.7830188679245284,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.68,
+          "latency": 0.26867469879518074,
+          "false_alarm_rate": 0.05,
+          "collision_rate": 0.015,
+          "recall": 0.7830188679245284,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.7,
+          "latency": 0.27195121951219514,
+          "false_alarm_rate": 0.05,
+          "collision_rate": 0.02,
+          "recall": 0.7735849056603774,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.72,
+          "latency": 0.27195121951219514,
+          "false_alarm_rate": 0.05,
+          "collision_rate": 0.02,
+          "recall": 0.7735849056603774,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.74,
+          "latency": 0.28170731707317076,
+          "false_alarm_rate": 0.05,
+          "collision_rate": 0.02,
+          "recall": 0.7735849056603774,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.76,
+          "latency": 0.2938271604938272,
+          "false_alarm_rate": 0.045,
+          "collision_rate": 0.02,
+          "recall": 0.7641509433962265,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.78,
+          "latency": 0.2962962962962963,
+          "false_alarm_rate": 0.045,
+          "collision_rate": 0.02,
+          "recall": 0.7641509433962265,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.8,
+          "latency": 0.3141025641025641,
+          "false_alarm_rate": 0.04,
+          "collision_rate": 0.02,
+          "recall": 0.7358490566037735,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.82,
+          "latency": 0.3220779220779221,
+          "false_alarm_rate": 0.035,
+          "collision_rate": 0.02,
+          "recall": 0.7264150943396226,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.84,
+          "latency": 0.3246753246753247,
+          "false_alarm_rate": 0.035,
+          "collision_rate": 0.02,
+          "recall": 0.7264150943396226,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.86,
+          "latency": 0.3413333333333334,
+          "false_alarm_rate": 0.035,
+          "collision_rate": 0.02,
+          "recall": 0.7075471698113207,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.88,
+          "latency": 0.34400000000000003,
+          "false_alarm_rate": 0.035,
+          "collision_rate": 0.02,
+          "recall": 0.7075471698113207,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.9,
+          "latency": 0.3391891891891892,
+          "false_alarm_rate": 0.03,
+          "collision_rate": 0.02,
+          "recall": 0.6981132075471698,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.92,
+          "latency": 0.36081081081081084,
+          "false_alarm_rate": 0.03,
+          "collision_rate": 0.025,
+          "recall": 0.6981132075471698,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.94,
+          "latency": 0.3716216216216216,
+          "false_alarm_rate": 0.03,
+          "collision_rate": 0.025,
+          "recall": 0.6981132075471698,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.96,
+          "latency": 0.37972972972972974,
+          "false_alarm_rate": 0.03,
+          "collision_rate": 0.025,
+          "recall": 0.6981132075471698,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.98,
+          "latency": 0.3878378378378379,
+          "false_alarm_rate": 0.03,
+          "collision_rate": 0.025,
+          "recall": 0.6981132075471698,
+          "is_pareto": false
+        },
+        {
+          "tau": 1.0,
+          "latency": 0.4013513513513514,
+          "false_alarm_rate": 0.03,
+          "collision_rate": 0.025,
+          "recall": 0.6981132075471698,
+          "is_pareto": false
+        }
+      ]
+    },
+    {
+      "sigma": 3.0,
+      "f1_best_tau": 0.6118184815714283,
+      "f1_best_loss": 1.8968845985081173,
+      "f1_best_result": {
+        "tau": 0.6118184815714283,
+        "collision_rate": 0.02,
+        "deadlock_rate": 0.0,
+        "cleared_rate": 0.96,
+        "mean_crossing_time": 4.853125,
+        "mean_detection_latency": 0.20348837209302326,
+        "false_alarm_rate": 0.15,
+        "detection_recall": 0.8113207547169812,
+        "n_adversarial": 106,
+        "n_honest": 94
+      },
+      "pareto_n_points": 50,
+      "pareto_n_frontier": 17,
+      "pareto_points": [
+        {
+          "tau": 0.02,
+          "latency": 0.10555555555555556,
+          "false_alarm_rate": 0.225,
+          "collision_rate": 0.02,
+          "recall": 0.8490566037735849,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.04,
+          "latency": 0.1088888888888889,
+          "false_alarm_rate": 0.225,
+          "collision_rate": 0.02,
+          "recall": 0.8490566037735849,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.06,
+          "latency": 0.11333333333333334,
+          "false_alarm_rate": 0.225,
+          "collision_rate": 0.02,
+          "recall": 0.8490566037735849,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.08,
+          "latency": 0.11555555555555556,
+          "false_alarm_rate": 0.225,
+          "collision_rate": 0.02,
+          "recall": 0.8490566037735849,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.1,
+          "latency": 0.10561797752808989,
+          "false_alarm_rate": 0.225,
+          "collision_rate": 0.02,
+          "recall": 0.839622641509434,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.12,
+          "latency": 0.10454545454545455,
+          "false_alarm_rate": 0.225,
+          "collision_rate": 0.02,
+          "recall": 0.8301886792452831,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.14,
+          "latency": 0.11022727272727274,
+          "false_alarm_rate": 0.225,
+          "collision_rate": 0.02,
+          "recall": 0.8301886792452831,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.16,
+          "latency": 0.11022727272727274,
+          "false_alarm_rate": 0.225,
+          "collision_rate": 0.02,
+          "recall": 0.8301886792452831,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.18,
+          "latency": 0.1125,
+          "false_alarm_rate": 0.225,
+          "collision_rate": 0.02,
+          "recall": 0.8301886792452831,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.2,
+          "latency": 0.11818181818181818,
+          "false_alarm_rate": 0.22,
+          "collision_rate": 0.02,
+          "recall": 0.8301886792452831,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.22,
+          "latency": 0.11931818181818182,
+          "false_alarm_rate": 0.215,
+          "collision_rate": 0.02,
+          "recall": 0.8301886792452831,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.24,
+          "latency": 0.12045454545454547,
+          "false_alarm_rate": 0.21,
+          "collision_rate": 0.02,
+          "recall": 0.8301886792452831,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.26,
+          "latency": 0.13068181818181818,
+          "false_alarm_rate": 0.21,
+          "collision_rate": 0.02,
+          "recall": 0.8301886792452831,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.28,
+          "latency": 0.13295454545454546,
+          "false_alarm_rate": 0.205,
+          "collision_rate": 0.02,
+          "recall": 0.8301886792452831,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.3,
+          "latency": 0.13295454545454546,
+          "false_alarm_rate": 0.205,
+          "collision_rate": 0.02,
+          "recall": 0.8301886792452831,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.32,
+          "latency": 0.14431818181818182,
+          "false_alarm_rate": 0.2,
+          "collision_rate": 0.02,
+          "recall": 0.8301886792452831,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.34,
+          "latency": 0.15000000000000002,
+          "false_alarm_rate": 0.195,
+          "collision_rate": 0.02,
+          "recall": 0.8301886792452831,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.36,
+          "latency": 0.1534090909090909,
+          "false_alarm_rate": 0.19,
+          "collision_rate": 0.02,
+          "recall": 0.8301886792452831,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.38,
+          "latency": 0.15402298850574714,
+          "false_alarm_rate": 0.19,
+          "collision_rate": 0.02,
+          "recall": 0.8207547169811321,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.4,
+          "latency": 0.15977011494252874,
+          "false_alarm_rate": 0.19,
+          "collision_rate": 0.02,
+          "recall": 0.8207547169811321,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.42,
+          "latency": 0.16436781609195403,
+          "false_alarm_rate": 0.185,
+          "collision_rate": 0.02,
+          "recall": 0.8207547169811321,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.44,
+          "latency": 0.16666666666666666,
+          "false_alarm_rate": 0.18,
+          "collision_rate": 0.02,
+          "recall": 0.8207547169811321,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.46,
+          "latency": 0.17093023255813955,
+          "false_alarm_rate": 0.175,
+          "collision_rate": 0.02,
+          "recall": 0.8113207547169812,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.48,
+          "latency": 0.17790697674418607,
+          "false_alarm_rate": 0.175,
+          "collision_rate": 0.02,
+          "recall": 0.8113207547169812,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.5,
+          "latency": 0.18023255813953487,
+          "false_alarm_rate": 0.175,
+          "collision_rate": 0.02,
+          "recall": 0.8113207547169812,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.52,
+          "latency": 0.18488372093023256,
+          "false_alarm_rate": 0.175,
+          "collision_rate": 0.02,
+          "recall": 0.8113207547169812,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.54,
+          "latency": 0.18720930232558142,
+          "false_alarm_rate": 0.175,
+          "collision_rate": 0.02,
+          "recall": 0.8113207547169812,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.56,
+          "latency": 0.1941860465116279,
+          "false_alarm_rate": 0.17,
+          "collision_rate": 0.02,
+          "recall": 0.8113207547169812,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.58,
+          "latency": 0.20232558139534887,
+          "false_alarm_rate": 0.165,
+          "collision_rate": 0.02,
+          "recall": 0.8113207547169812,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.6,
+          "latency": 0.20232558139534887,
+          "false_alarm_rate": 0.16,
+          "collision_rate": 0.02,
+          "recall": 0.8113207547169812,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.62,
+          "latency": 0.20697674418604653,
+          "false_alarm_rate": 0.15,
+          "collision_rate": 0.02,
+          "recall": 0.8113207547169812,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.64,
+          "latency": 0.20813953488372094,
+          "false_alarm_rate": 0.15,
+          "collision_rate": 0.02,
+          "recall": 0.8113207547169812,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.66,
+          "latency": 0.2127906976744186,
+          "false_alarm_rate": 0.15,
+          "collision_rate": 0.02,
+          "recall": 0.8113207547169812,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.68,
+          "latency": 0.21176470588235294,
+          "false_alarm_rate": 0.15,
+          "collision_rate": 0.02,
+          "recall": 0.8018867924528302,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.7,
+          "latency": 0.21176470588235294,
+          "false_alarm_rate": 0.15,
+          "collision_rate": 0.02,
+          "recall": 0.8018867924528302,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.72,
+          "latency": 0.21764705882352942,
+          "false_alarm_rate": 0.15,
+          "collision_rate": 0.02,
+          "recall": 0.8018867924528302,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.74,
+          "latency": 0.21764705882352942,
+          "false_alarm_rate": 0.15,
+          "collision_rate": 0.02,
+          "recall": 0.8018867924528302,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.76,
+          "latency": 0.22023809523809523,
+          "false_alarm_rate": 0.15,
+          "collision_rate": 0.02,
+          "recall": 0.7924528301886793,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.78,
+          "latency": 0.22976190476190478,
+          "false_alarm_rate": 0.15,
+          "collision_rate": 0.02,
+          "recall": 0.7924528301886793,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.8,
+          "latency": 0.24404761904761904,
+          "false_alarm_rate": 0.145,
+          "collision_rate": 0.025,
+          "recall": 0.7924528301886793,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.82,
+          "latency": 0.24404761904761904,
+          "false_alarm_rate": 0.145,
+          "collision_rate": 0.025,
+          "recall": 0.7924528301886793,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.84,
+          "latency": 0.24337349397590366,
+          "false_alarm_rate": 0.145,
+          "collision_rate": 0.025,
+          "recall": 0.7830188679245284,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.86,
+          "latency": 0.24878048780487808,
+          "false_alarm_rate": 0.145,
+          "collision_rate": 0.03,
+          "recall": 0.7735849056603774,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.88,
+          "latency": 0.2573170731707317,
+          "false_alarm_rate": 0.145,
+          "collision_rate": 0.03,
+          "recall": 0.7735849056603774,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.9,
+          "latency": 0.2707317073170732,
+          "false_alarm_rate": 0.135,
+          "collision_rate": 0.03,
+          "recall": 0.7735849056603774,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.92,
+          "latency": 0.2707317073170732,
+          "false_alarm_rate": 0.135,
+          "collision_rate": 0.03,
+          "recall": 0.7735849056603774,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.94,
+          "latency": 0.2707317073170732,
+          "false_alarm_rate": 0.125,
+          "collision_rate": 0.03,
+          "recall": 0.7735849056603774,
+          "is_pareto": true
+        },
+        {
+          "tau": 0.96,
+          "latency": 0.27195121951219514,
+          "false_alarm_rate": 0.125,
+          "collision_rate": 0.03,
+          "recall": 0.7735849056603774,
+          "is_pareto": false
+        },
+        {
+          "tau": 0.98,
+          "latency": 0.27195121951219514,
+          "false_alarm_rate": 0.125,
+          "collision_rate": 0.03,
+          "recall": 0.7735849056603774,
+          "is_pareto": false
+        },
+        {
+          "tau": 1.0,
+          "latency": 0.27682926829268295,
+          "false_alarm_rate": 0.125,
+          "collision_rate": 0.03,
+          "recall": 0.7735849056603774,
+          "is_pareto": false
+        }
+      ]
+    }
+  ]
+}

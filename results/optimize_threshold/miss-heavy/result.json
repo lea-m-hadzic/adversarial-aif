@@ -1,0 +1,400 @@
+{
+  "best_tau": 0.04021139555015986,
+  "best_loss": 1.7599895178197063,
+  "best_result": {
+    "tau": 0.04021139555015986,
+    "collision_rate": 0.015,
+    "deadlock_rate": 0.0,
+    "cleared_rate": 0.965,
+    "mean_crossing_time": 4.892746113989638,
+    "mean_detection_latency": 0.08555555555555555,
+    "false_alarm_rate": 0.165,
+    "detection_recall": 0.8490566037735849,
+    "n_adversarial": 106,
+    "n_honest": 94
+  },
+  "iterations": [
+    {
+      "iter": 0,
+      "a": 0.01,
+      "b": 1.0,
+      "x1": 0.3881463511376041,
+      "x2": 0.6218536488623959,
+      "f1": 2.185862220272049,
+      "f2": 2.378566936208445
+    },
+    {
+      "iter": 1,
+      "a": 0.01,
+      "b": 0.6218536488623959,
+      "x1": 0.24370729772479177,
+      "x2": 0.3881463511376041,
+      "f1": 1.9760677530017148,
+      "f2": 2.185862220272049
+    },
+    {
+      "iter": 2,
+      "a": 0.01,
+      "b": 0.3881463511376041,
+      "x1": 0.15443905341281228,
+      "x2": 0.24370729772479177,
+      "f1": 1.9583404802744422,
+      "f2": 1.9760677530017148
+    },
+    {
+      "iter": 3,
+      "a": 0.01,
+      "b": 0.24370729772479177,
+      "x1": 0.09926824431197948,
+      "x2": 0.15443905341281228,
+      "f1": 1.787767295597484,
+      "f2": 1.9583404802744422
+    },
+    {
+      "iter": 4,
+      "a": 0.01,
+      "b": 0.15443905341281228,
+      "x1": 0.0651708091008328,
+      "x2": 0.09926824431197948,
+      "f1": 1.7744339622641507,
+      "f2": 1.787767295597484
+    },
+    {
+      "iter": 5,
+      "a": 0.01,
+      "b": 0.09926824431197948,
+      "x1": 0.04409743521114668,
+      "x2": 0.0651708091008328,
+      "f1": 1.7622117400419284,
+      "f2": 1.7744339622641507
+    },
+    {
+      "iter": 6,
+      "a": 0.01,
+      "b": 0.0651708091008328,
+      "x1": 0.031073373889686104,
+      "x2": 0.04409743521114668,
+      "f1": 1.762767295597484,
+      "f2": 1.7622117400419284
+    },
+    {
+      "iter": 7,
+      "a": 0.031073373889686104,
+      "b": 0.0651708091008328,
+      "x1": 0.04409743521114668,
+      "x2": 0.05214674777937221,
+      "f1": 1.7622117400419284,
+      "f2": 1.7688784067085952
+    },
+    {
+      "iter": 8,
+      "a": 0.031073373889686104,
+      "b": 0.05214674777937221,
+      "x1": 0.039122686457911615,
+      "x2": 0.04409743521114668,
+      "f1": 1.7599895178197063,
+      "f2": 1.7622117400419284
+    },
+    {
+      "iter": 9,
+      "a": 0.031073373889686104,
+      "b": 0.04409743521114668,
+      "x1": 0.036048122642921177,
+      "x2": 0.039122686457911615,
+      "f1": 1.762767295597484,
+      "f2": 1.7599895178197063
+    },
+    {
+      "iter": 10,
+      "a": 0.036048122642921177,
+      "b": 0.04409743521114668,
+      "x1": 0.039122686457911615,
+      "x2": 0.04102287139615625,
+      "f1": 1.7599895178197063,
+      "f2": 1.7611006289308173
+    },
+    {
+      "iter": 11,
+      "a": 0.036048122642921177,
+      "b": 0.04102287139615625,
+      "x1": 0.03794830758116581,
+      "x2": 0.039122686457911615,
+      "f1": 1.7599895178197063,
+      "f2": 1.7599895178197063
+    },
+    {
+      "iter": 12,
+      "a": 0.03794830758116581,
+      "b": 0.04102287139615625,
+      "x1": 0.039122686457911615,
+      "x2": 0.039848492519410444,
+      "f1": 1.7599895178197063,
+      "f2": 1.7599895178197063
+    },
+    {
+      "iter": 13,
+      "a": 0.039122686457911615,
+      "b": 0.04102287139615625,
+      "x1": 0.039848492519410444,
+      "x2": 0.04029706533465742,
+      "f1": 1.7599895178197063,
+      "f2": 1.7599895178197063
+    },
+    {
+      "iter": 14,
+      "a": 0.039848492519410444,
+      "b": 0.04102287139615625,
+      "x1": 0.04029706533465742,
+      "x2": 0.040574298580909274,
+      "f1": 1.7599895178197063,
+      "f2": 1.7611006289308173
+    },
+    {
+      "iter": 15,
+      "a": 0.039848492519410444,
+      "b": 0.040574298580909274,
+      "x1": 0.0401257257656623,
+      "x2": 0.04029706533465742,
+      "f1": 1.7599895178197063,
+      "f2": 1.7599895178197063
+    }
+  ],
+  "evaluations": [
+    {
+      "tau": 0.3881463511376041,
+      "loss": 2.185862220272049,
+      "collision_rate": 0.015,
+      "deadlock_rate": 0.0,
+      "cleared_rate": 0.97,
+      "mean_crossing_time": 4.844845360824743,
+      "mean_detection_latency": 0.17906976744186046,
+      "false_alarm_rate": 0.12,
+      "detection_recall": 0.8113207547169812,
+      "n_adversarial": 106,
+      "n_honest": 94
+    },
+    {
+      "tau": 0.6218536488623959,
+      "loss": 2.378566936208445,
+      "collision_rate": 0.015,
+      "deadlock_rate": 0.0,
+      "cleared_rate": 0.98,
+      "mean_crossing_time": 4.909693877551021,
+      "mean_detection_latency": 0.23809523809523808,
+      "false_alarm_rate": 0.065,
+      "detection_recall": 0.7924528301886793,
+      "n_adversarial": 106,
+      "n_honest": 94
+    },
+    {
+      "tau": 0.24370729772479177,
+      "loss": 1.9760677530017148,
+      "collision_rate": 0.015,
+      "deadlock_rate": 0.0,
+      "cleared_rate": 0.97,
+      "mean_crossing_time": 4.898453608247423,
+      "mean_detection_latency": 0.13295454545454546,
+      "false_alarm_rate": 0.145,
+      "detection_recall": 0.8301886792452831,
+      "n_adversarial": 106,
+      "n_honest": 94
+    },
+    {
+      "tau": 0.15443905341281228,
+      "loss": 1.9583404802744422,
+      "collision_rate": 0.015,
+      "deadlock_rate": 0.0,
+      "cleared_rate": 0.97,
+      "mean_crossing_time": 4.898969072164949,
+      "mean_detection_latency": 0.11022727272727274,
+      "false_alarm_rate": 0.15,
+      "detection_recall": 0.8301886792452831,
+      "n_adversarial": 106,
+      "n_honest": 94
+    },
+    {
+      "tau": 0.09926824431197948,
+      "loss": 1.787767295597484,
+      "collision_rate": 0.015,
+      "deadlock_rate": 0.0,
+      "cleared_rate": 0.965,
+      "mean_crossing_time": 4.88860103626943,
+      "mean_detection_latency": 0.11333333333333334,
+      "false_alarm_rate": 0.165,
+      "detection_recall": 0.8490566037735849,
+      "n_adversarial": 106,
+      "n_honest": 94
+    },
+    {
+      "tau": 0.0651708091008328,
+      "loss": 1.7744339622641507,
+      "collision_rate": 0.015,
+      "deadlock_rate": 0.0,
+      "cleared_rate": 0.965,
+      "mean_crossing_time": 4.8917098445595855,
+      "mean_detection_latency": 0.1,
+      "false_alarm_rate": 0.165,
+      "detection_recall": 0.8490566037735849,
+      "n_adversarial": 106,
+      "n_honest": 94
+    },
+    {
+      "tau": 0.04409743521114668,
+      "loss": 1.7622117400419284,
+      "collision_rate": 0.015,
+      "deadlock_rate": 0.0,
+      "cleared_rate": 0.965,
+      "mean_crossing_time": 4.8917098445595855,
+      "mean_detection_latency": 0.08777777777777779,
+      "false_alarm_rate": 0.165,
+      "detection_recall": 0.8490566037735849,
+      "n_adversarial": 106,
+      "n_honest": 94
+    },
+    {
+      "tau": 0.031073373889686104,
+      "loss": 1.762767295597484,
+      "collision_rate": 0.015,
+      "deadlock_rate": 0.0,
+      "cleared_rate": 0.965,
+      "mean_crossing_time": 4.894818652849741,
+      "mean_detection_latency": 0.08333333333333333,
+      "false_alarm_rate": 0.17,
+      "detection_recall": 0.8490566037735849,
+      "n_adversarial": 106,
+      "n_honest": 94
+    },
+    {
+      "tau": 0.05214674777937221,
+      "loss": 1.7688784067085952,
+      "collision_rate": 0.015,
+      "deadlock_rate": 0.0,
+      "cleared_rate": 0.965,
+      "mean_crossing_time": 4.8917098445595855,
+      "mean_detection_latency": 0.09444444444444444,
+      "false_alarm_rate": 0.165,
+      "detection_recall": 0.8490566037735849,
+      "n_adversarial": 106,
+      "n_honest": 94
+    },
+    {
+      "tau": 0.039122686457911615,
+      "loss": 1.7599895178197063,
+      "collision_rate": 0.015,
+      "deadlock_rate": 0.0,
+      "cleared_rate": 0.965,
+      "mean_crossing_time": 4.892746113989638,
+      "mean_detection_latency": 0.08555555555555555,
+      "false_alarm_rate": 0.165,
+      "detection_recall": 0.8490566037735849,
+      "n_adversarial": 106,
+      "n_honest": 94
+    },
+    {
+      "tau": 0.036048122642921177,
+      "loss": 1.762767295597484,
+      "collision_rate": 0.015,
+      "deadlock_rate": 0.0,
+      "cleared_rate": 0.965,
+      "mean_crossing_time": 4.894818652849741,
+      "mean_detection_latency": 0.08333333333333333,
+      "false_alarm_rate": 0.17,
+      "detection_recall": 0.8490566037735849,
+      "n_adversarial": 106,
+      "n_honest": 94
+    },
+    {
+      "tau": 0.04102287139615625,
+      "loss": 1.7611006289308173,
+      "collision_rate": 0.015,
+      "deadlock_rate": 0.0,
+      "cleared_rate": 0.965,
+      "mean_crossing_time": 4.8917098445595855,
+      "mean_detection_latency": 0.08666666666666667,
+      "false_alarm_rate": 0.165,
+      "detection_recall": 0.8490566037735849,
+      "n_adversarial": 106,
+      "n_honest": 94
+    },
+    {
+      "tau": 0.03794830758116581,
+      "loss": 1.7599895178197063,
+      "collision_rate": 0.015,
+      "deadlock_rate": 0.0,
+      "cleared_rate": 0.965,
+      "mean_crossing_time": 4.892746113989638,
+      "mean_detection_latency": 0.08555555555555555,
+      "false_alarm_rate": 0.165,
+      "detection_recall": 0.8490566037735849,
+      "n_adversarial": 106,
+      "n_honest": 94
+    },
+    {
+      "tau": 0.039848492519410444,
+      "loss": 1.7599895178197063,
+      "collision_rate": 0.015,
+      "deadlock_rate": 0.0,
+      "cleared_rate": 0.965,
+      "mean_crossing_time": 4.892746113989638,
+      "mean_detection_latency": 0.08555555555555555,
+      "false_alarm_rate": 0.165,
+      "detection_recall": 0.8490566037735849,
+      "n_adversarial": 106,
+      "n_honest": 94
+    },
+    {
+      "tau": 0.04029706533465742,
+      "loss": 1.7599895178197063,
+      "collision_rate": 0.015,
+      "deadlock_rate": 0.0,
+      "cleared_rate": 0.965,
+      "mean_crossing_time": 4.892746113989638,
+      "mean_detection_latency": 0.08555555555555555,
+      "false_alarm_rate": 0.165,
+      "detection_recall": 0.8490566037735849,
+      "n_adversarial": 106,
+      "n_honest": 94
+    },
+    {
+      "tau": 0.040574298580909274,
+      "loss": 1.7611006289308173,
+      "collision_rate": 0.015,
+      "deadlock_rate": 0.0,
+      "cleared_rate": 0.965,
+      "mean_crossing_time": 4.8917098445595855,
+      "mean_detection_latency": 0.08666666666666667,
+      "false_alarm_rate": 0.165,
+      "detection_recall": 0.8490566037735849,
+      "n_adversarial": 106,
+      "n_honest": 94
+    },
+    {
+      "tau": 0.0401257257656623,
+      "loss": 1.7599895178197063,
+      "collision_rate": 0.015,
+      "deadlock_rate": 0.0,
+      "cleared_rate": 0.965,
+      "mean_crossing_time": 4.892746113989638,
+      "mean_detection_latency": 0.08555555555555555,
+      "false_alarm_rate": 0.165,
+      "detection_recall": 0.8490566037735849,
+      "n_adversarial": 106,
+      "n_honest": 94
+    }
+  ],
+  "config": {
+    "tau_lo": 0.01,
+    "tau_hi": 1.0,
+    "tol": 0.001,
+    "weights": {
+      "latency": 1.0,
+      "false_alarm": 1.0,
+      "miss": 10.0,
+      "miss_latency_default": 5.0
+    },
+    "n_episodes": 200,
+    "adversarial_rate": 0.5,
+    "accel_noise_std": 2.0,
+    "base_seed": 42
+  }
+}
