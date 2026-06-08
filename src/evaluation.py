@@ -49,7 +49,7 @@ class EvalConfig:
 
     # Observation noise on B's estimate of A's acceleration (m/s^2).
     # Higher noise => detection at low tau false-alarms more, detection at
-    # high tau misses more. This is what creates a real tradeoff.
+    # high tau misses more.
     accel_noise_std: float = 0.5
 
     # Simulator
