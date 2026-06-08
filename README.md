@@ -4,7 +4,7 @@
 
 </div>
 
-> When a self-driving car sees another driver flip on their yield indicator while accelerating into the intersection, who should it trust — the signal, or the motion?
+_When a self-driving car sees another driver flip on their yield indicator while accelerating into the intersection, who should it trust — the signal, or the motion?_
 
 This project formulates that question as an optimization problem. A naive active-inference agent that trusts yield signals collides in **100% of deterministic adversarial encounters**. Adding a single-parameter inconsistency detector eliminates the failure mode and matches a ground-truth oracle in collision prevention.
 
@@ -30,6 +30,8 @@ and the project optimizes it under three formulations:
 
 Plus a sensitivity study (observation noise, adversarial rate, seed variance,
 oracle comparison) and a conflict-phase-gating ablation.
+
+This project builds on recent active-inference models of road-user interaction by Schumann et al. (2026), which show that misleading communication can produce unsafe outcomes — and treat that observation as a limitation. The contribution here is to make that failure mode the explicit subject of optimization, with three formulations, three measurable metrics, and a Pareto-validated cross-comparison.
 
 ## Key results
 
@@ -137,16 +139,6 @@ signal and kinematics; once `s_t > τ` it sticks ON for the rest of the episode
 and the agent's belief update drops the signal as evidence. The whole project
 is one design choice — picking **τ** — under three different statements of
 what "good" means.
-
-## Background
-
-This project builds on recent active-inference models of road-user interaction by Schumann et al. (2026), which show that misleading communication can produce unsafe outcomes — and treat that observation as a limitation. The contribution here is to make that failure mode the explicit subject of optimization, with three formulations, three measurable metrics, and a Pareto-validated cross-comparison.
-
-References for the techniques used:
-- Kochenderfer & Wheeler, *Algorithms for Optimization* (MIT Press, 2019) — golden-section, penalty/barrier, Pareto
-- Nocedal & Wright, *Numerical Optimization* (Springer, 2006) — penalty methods
-- Boyd & Vandenberghe, *Convex Optimization* (Cambridge, 2004) — barrier methods
-- Friston, "The free-energy principle" *Nat Rev Neurosci* (2010) — active inference foundations
 
 ## License
 
