@@ -37,8 +37,6 @@ oracle comparison) and a conflict-phase-gating ablation.
 
 **Five of six optimization-method optima land on the empirical Pareto frontier**, validating that the formulations are well-posed:
 
-![Pareto frontier with F1 and F2 optima overlaid](pareto_frontier.png)
-
 **Constrained formulation beats weighted-sum proxies.** At a fixed false-alarm bound of 5%, the F2 penalty method achieves 0.245 s latency versus F1's nearest weighted-sum analog at 0.316 s — empirical evidence for using explicit constraints when a hard operational bound exists.
 
 **Penalty and barrier methods bracket the constraint boundary** as theory predicts: penalty converges to FA = 5.00% (exactly at the bound), barrier converges to FA = 4.50% (strictly feasible).
