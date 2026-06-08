@@ -1,10 +1,4 @@
-"""Plot convergence traces for Formulations 1 and 2 — clarity rewrite.
-
-Three panels side by side. Same data as before, but:
-    - font_scale=1.35 for readability
-    - subplot titles removed; caption carries the role
-    - bigger markers, more whitespace
-    - cleaner annotations on F2 panels
+"""Plot convergence traces for Formulations 1 and 2. Three panels side by side.
 
 Requires: pip install seaborn
 
