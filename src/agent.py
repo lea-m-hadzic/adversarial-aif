@@ -10,9 +10,6 @@ Convention:
     d < 0  : agent has entered / passed the intersection
         in particular, d in [-W, 0] means the agent is inside the
         intersection box (W = intersection width along the agent's axis)
-
-This sign convention means "approaching the intersection" = "d decreasing
-toward zero," which matches the proposal's notation (Delta D < 0 in Fig. 1).
 """
 
 from dataclasses import dataclass, field
