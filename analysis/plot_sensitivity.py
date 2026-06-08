@@ -1,11 +1,4 @@
-"""Plot the sensitivity sweep results — clarity rewrite.
-
-Three panels side by side. Improvements over previous version:
-    - font_scale=1.35
-    - subplot titles removed; caption carries the role
-    - larger markers and line widths
-    - bigger value labels on the bar chart
-    - cleaner callout text
+"""Plot the sensitivity sweep results. Three panels side by side.
 
 Requires: pip install seaborn
 
