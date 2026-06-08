@@ -20,8 +20,8 @@ Signal likelihood: Bernoulli.
     P(s_t = 1 | N) = q_noyield    (close to 0)
 
 A "naively trusting" agent uses q_noyield near 0, so seeing signal=1 strongly
-shifts the belief toward Yielder. This is the agent that gets fooled by
-deceptive adversaries — exactly what we want for the baseline.
+shifts the belief toward Yielder; this is the agent that gets fooled by
+deceptive adversaries.
 """
 
 from dataclasses import dataclass
