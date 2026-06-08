@@ -5,8 +5,8 @@ HonestPolicy: emits signal=1 iff actually yielding. Two flavors are useful:
     - HonestNonYielder: maintains velocity, emits signal=0.
 
 DeceptivePolicy: emits signal=1 (yielding) while NOT actually yielding —
-    i.e., maintains velocity or accelerates. This is the adversarial mode
-    in the proposal. The deception can be permanent or stochastic.
+    i.e., maintains velocity or accelerates. The deception can be permanent 
+    or stochastic.
 
 All policies return (acceleration, signal).
 """
