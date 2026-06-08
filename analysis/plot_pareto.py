@@ -1,11 +1,4 @@
-"""Plot the Pareto frontier — seaborn version.
-
-Same data and layout as plot_pareto.py, but uses seaborn for styling and
-some scatter/line calls. The differences vs. plain matplotlib:
-    - Cleaner default background and gridlines
-    - Better default font sizing and spacing
-    - More polished color palettes (we still override with our own colors
-      for the F1/F2 overlays so they remain identifiable)
+"""Plot the Pareto frontier.
 
 Requires: pip install seaborn
 
