@@ -1,4 +1,4 @@
-"""Extended experiments for Phase 3 (rigor):
+"""Extended experiments:
 
     1. Seed variance per method: re-run each of the six methods (4 F1 weight
        settings + F2 penalty + F2 barrier) across multiple seeds, reporting
