@@ -82,7 +82,7 @@ def golden_section_search(
 ) -> tuple[float, SearchHistory]:
     """Standard golden-section search for argmin f(x) on [a, b].
 
-    Returns (best_tau, history). The history contains both the bracket at
+    Returns (best_tau, history). History contains both the bracket at
     each iteration and every individual evaluation, so we can plot the
     convergence curve.
     """
