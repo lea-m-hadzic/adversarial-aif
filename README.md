@@ -126,20 +126,6 @@ python -m analysis.plot_pareto
 python -m analysis.plot_sensitivity
 ```
 
-## Method, in one paragraph
-
-The simulator runs two agents converging on an unsignalized intersection. One
-of them may be **deceptive** — emitting a yielding signal (σ=1) while failing
-to actually decelerate. The ego agent maintains a posterior `p_t ∈ [0,1]` over
-the other's type ∈ {yielder, non-yielder}, updates it from (noisy acceleration,
-signal) observations, and picks an action by minimizing
-`α P_coll(a, p) + β T_cross(a)` over a discrete action set. The detector
-computes a smoothed inconsistency score `s_t` from the *contradiction* between
-signal and kinematics; once `s_t > τ` it sticks ON for the rest of the episode
-and the agent's belief update drops the signal as evidence. The whole project
-is one design choice — picking **τ** — under three different statements of
-what "good" means.
-
 ## License
 
 MIT — see [LICENSE](LICENSE).
