@@ -31,13 +31,13 @@ and the project optimizes it under three formulations:
 Plus a sensitivity study (observation noise, adversarial rate, seed variance,
 oracle comparison) and a conflict-phase-gating ablation.
 
-This project builds on recent active-inference models of road-user interaction by Schumann et al. (2026), which show that misleading communication can produce unsafe outcomes — and treat that observation as a limitation. The contribution here is to make that failure mode the explicit subject of optimization, with three formulations, three measurable metrics, and a Pareto-validated cross-comparison.
+_This project builds on recent active-inference models of road-user interaction by Schumann et al. (2026), which show that misleading communication can produce unsafe outcomes — and treat that observation as a limitation._
 
 ## Key results
 
 * **Detection prevents 100% of preventable collisions.** At observation noise σ = 2.0 m/s², a naive agent collides on 4.0% of episodes, the optimized detector collides on 1.5%, and a ground-truth oracle collides on 1.5%. The residual 1.5% reflects scenarios where even perfect knowledge can't brake in time.
 
-* **Five of six optimization-method optima land on the empirical Pareto frontier**, validating that the formulations are well-posed:
+* **Five of six optimization-method optima land on the empirical Pareto frontier**, validating that the formulations are well-posed.
 
 * **Constrained formulation beats weighted-sum proxies.** At a fixed false-alarm bound of 5%, the F2 penalty method achieves 0.245 s latency versus F1's nearest weighted-sum analog at 0.316 s — empirical evidence for using explicit constraints when a hard operational bound exists.
 
@@ -49,7 +49,7 @@ This project builds on recent active-inference models of road-user interaction b
 
 Full writeup with system model, optimization formulations, sensitivity analyses, and ablations:
 
-📄 **[Final paper (PDF)](paper.pdf)** — IEEE 2-column, 5 pages
+📄 **[Final paper (PDF)](paper.pdf)** — IEEE 2-column, 6 pages
 
 ## Tech stack
 
