@@ -64,7 +64,7 @@ CPU only — no GPU, no ML framework, no JAX/PyTorch. The full experiment grid r
 ```
 .
 ├── README.md                          project overview + reproduce instructions
-├── paper.pdf                          final write-up
+├── paper.pdf                          write-up
 ├── episode_comparison.gif             README animation
 ├── requirements.txt                   Python dependencies
 ├── LICENSE                            MIT
