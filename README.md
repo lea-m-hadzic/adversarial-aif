@@ -46,10 +46,9 @@ _This project builds on recent active-inference models of road-user interaction 
 ## Tech stack
 
 - `Python 3.10+`
-- [`numpy`](https://numpy.org) + [`scipy`](https://scipy.org) — numerical primitives, golden-section search
-- [`matplotlib`](https://matplotlib.org) + [`seaborn`](https://seaborn.pydata.org) — figures
+- [`numpy`](https://numpy.org) — numerical primitives (golden-section search and the penalty / barrier methods are implemented from scratch)
 
-CPU only — no GPU, no ML framework, no JAX/PyTorch. The full experiment grid runs in a few minutes on a laptop.
+CPU only — no GPU, no ML framework, no JAX/PyTorch. The F1–F3 scripts each finish in under a minute on a laptop; the full grid, including the sensitivity sweep and extended experiments, takes about 20–25 minutes.
 
 ## Repository layout
 

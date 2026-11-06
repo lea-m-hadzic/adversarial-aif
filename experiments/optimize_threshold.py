@@ -9,8 +9,8 @@ detections at all), so we'd lose all signal. Miss rate fills that gap.
 
 We use golden-section search on a bounded 1D interval. This is the
 textbook 1D optimizer for unimodal smooth objectives — and our loss is
-roughly unimodal in tau. We also save the full search trace so we can
-plot convergence.
+roughly unimodal in tau. We also save the full search trace in result.json
+so convergence can be inspected.
 
 Usage:
     python -m experiments.optimize_threshold
@@ -83,8 +83,8 @@ def golden_section_search(
     """Standard golden-section search for argmin f(x) on [a, b].
 
     Returns (best_tau, history). History contains both the bracket at
-    each iteration and every individual evaluation, so we can plot the
-    convergence curve.
+    each iteration and every individual evaluation, so the convergence
+    curve can be reconstructed.
     """
     history = SearchHistory(iterations=[], evaluations=[])
 

@@ -111,8 +111,8 @@ def sweep(cfg: EvalConfig, tau_values: list[float]) -> list[PareToPoint]:
 def load_formulation_optima(results_root: Path) -> dict:
     """Load the optima from Formulations 1 and 2, if they exist.
 
-    Returns a dict mapping label -> {tau, latency, FA, collision} that we'll
-    overlay on the Pareto plot.
+    Returns a dict mapping label -> {tau, latency, FA, collision}, saved
+    alongside the Pareto frontier in result.json.
     """
     overlays = {}
 
