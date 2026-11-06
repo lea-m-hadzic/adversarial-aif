@@ -37,7 +37,7 @@ _This project builds on recent active-inference models of road-user interaction 
 
 * **Detection prevents 100% of preventable collisions.** At observation noise σ = 2.0 m/s², a naive agent collides on 4.0% of episodes, the optimized detector collides on 1.5%, and a ground-truth oracle collides on 1.5%. The residual 1.5% reflects scenarios where even perfect knowledge can't brake in time.
 
-* **Five of six optimization-method optima land on the empirical Pareto frontier**, validating that the formulations are well-posed.
+* **Four of six optimization-method optima land on the empirical Pareto frontier**, validating that the formulations are well-posed.
 
 * **Constrained formulation beats weighted-sum proxies.** At a fixed false-alarm bound of 5%, the F2 penalty method achieves 0.245 s latency versus F1's nearest weighted-sum analog at 0.316 s — empirical evidence for using explicit constraints when a hard operational bound exists.
 
