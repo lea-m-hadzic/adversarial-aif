@@ -43,17 +43,9 @@ _This project builds on recent active-inference models of road-user interaction 
 
 * **Penalty and barrier methods bracket the constraint boundary** as theory predicts: penalty converges to FA = 5.00% (exactly at the bound), barrier converges to FA = 4.50% (strictly feasible).
 
-* **Results are robust.** Across 10 random seeds, the optimal τ varies by less than 0.001 for every method tested. Numbers reported here are not Monte Carlo artifacts.
-
-## Paper
-
-Full writeup with system model, optimization formulations, sensitivity analyses, and ablations:
-
-📄 **[Final paper (PDF)](paper.pdf)** — IEEE 2-column, 6 pages
-
 ## Tech stack
 
-- **Python 3.10+**
+- `Python 3.10+`
 - [`numpy`](https://numpy.org) + [`scipy`](https://scipy.org) — numerical primitives, golden-section search
 - [`matplotlib`](https://matplotlib.org) + [`seaborn`](https://seaborn.pydata.org) — figures
 
@@ -64,7 +56,6 @@ CPU only — no GPU, no ML framework, no JAX/PyTorch. The full experiment grid r
 ```
 .
 ├── README.md                          project overview + reproduce instructions
-├── paper.pdf                          write-up
 ├── episode_comparison.gif             README animation
 ├── requirements.txt                   Python dependencies
 ├── LICENSE                            MIT
@@ -85,15 +76,10 @@ CPU only — no GPU, no ML framework, no JAX/PyTorch. The full experiment grid r
 │   ├── sensitivity_sweep.py           noise / adv-rate / seed-variance / oracle
 │   └── extended_experiments.py        seed variance per method + gating ablation
 │
-├── analysis/                          figures (read results/, write PNG + PDF)
-│   ├── plot_convergence.py            F1/F2 convergence
-│   ├── plot_pareto.py                 F3 frontier
-│   └── plot_sensitivity.py            sensitivity figure
-│
-└── results/                           generated outputs (committed for reproducibility)
-    ├── optimize_threshold/            F1 result.json + figures, per weight setting
-    ├── constrained_optimization/      F2 result.json + figures
-    ├── pareto_analysis/               F3 result.json + frontier figure
+└── results/                           
+    ├── optimize_threshold/            F1 result.json 
+    ├── constrained_optimization/      F2 result.json
+    ├── pareto_analysis/               F3 result.json
     ├── sensitivity/                   sensitivity sweeps
     └── rigor/                         seed variance + ablation
 ```
@@ -108,7 +94,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Run the experiments — each writes a `result.json` (plus figures) into `results/`:
+Run the experiments — each writes a `result.json` into `results/`:
 
 ```bash
 python -m experiments.optimize_threshold        # F1
@@ -116,14 +102,6 @@ python -m experiments.constrained_optimization  # F2
 python -m experiments.pareto_analysis           # F3  (overlays F1+F2 optima — run those first)
 python -m experiments.sensitivity_sweep         # noise / adv-rate / seed / oracle sweeps
 python -m experiments.extended_experiments      # seed variance per method + gating ablation
-```
-
-Regenerate the figures from saved results:
-
-```bash
-python -m analysis.plot_convergence
-python -m analysis.plot_pareto
-python -m analysis.plot_sensitivity
 ```
 
 ## License
