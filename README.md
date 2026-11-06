@@ -1,6 +1,6 @@
 <div align="center">
 
-# Optimizing Active Inference Agents for Robustness to Adversarial Behavior in Traffic Interactions
+## Optimizing Active Inference Agents for Robustness to Adversarial Behavior in Traffic Interactions
 
 </div>
 
